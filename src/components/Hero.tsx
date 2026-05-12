@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -78,13 +79,17 @@ const Hero = () => {
           transition={{ duration: 1, delay: 0.6 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16"
         >
-          <button className="btn-gold w-full sm:w-auto flex items-center justify-center group hover:shadow-gold">
-            Book Free Strategy Call
-            <ArrowRight size={14} className="ml-3 group-hover:translate-x-1 transition-transform" />
-          </button>
-          <button className="btn-outline w-full sm:w-auto">
-            View Analytics Proof
-          </button>
+          <Link to="/contact" className="w-full sm:w-auto">
+            <button className="btn-gold w-full flex items-center justify-center group hover:shadow-gold">
+              Book Free Strategy Call
+              <ArrowRight size={14} className="ml-3 group-hover:translate-x-1 transition-transform" />
+            </button>
+          </Link>
+          <Link to="/portfolio" className="w-full sm:w-auto">
+            <button className="btn-outline w-full">
+              View Case Studies
+            </button>
+          </Link>
         </motion.div>
 
         <motion.div

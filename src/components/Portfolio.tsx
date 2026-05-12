@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
   const projects = [
@@ -106,9 +107,11 @@ const Portfolio = () => {
         </div>
         
         <div className="mt-20 text-center">
-            <button className="text-xs uppercase tracking-[0.4em] font-bold text-white/40 hover:text-gold transition-colors py-4 border-b border-white/10 hover:border-gold">
-                Explore More Case Studies
-            </button>
+            <Link to="/contact">
+                <button className="text-xs uppercase tracking-[0.4em] font-bold text-white/40 hover:text-gold transition-colors py-4 border-b border-white/10 hover:border-gold">
+                    Explore More Case Studies
+                </button>
+            </Link>
         </div>
       </div>
     </section>

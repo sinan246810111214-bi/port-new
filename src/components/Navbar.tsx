@@ -50,13 +50,15 @@ const Navbar = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-gold transition-all duration-300 group-hover:w-full" />
             </Link>
           ))}
-          <motion.button 
-            whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(212, 175, 55, 0.3)" }}
-            whileTap={{ scale: 0.95 }}
-            className="btn-gold !py-3 !px-8 !text-[9px] !rounded-full"
-          >
-            Hire Me
-          </motion.button>
+          <Link to="/contact">
+            <motion.button 
+              whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(212, 175, 55, 0.3)" }}
+              whileTap={{ scale: 0.95 }}
+              className="btn-gold !py-3 !px-8 !text-[9px] !rounded-full"
+            >
+              Hire Me
+            </motion.button>
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
@@ -99,6 +101,19 @@ const Navbar = () => {
                 </Link>
               </motion.div>
             ))}
+            
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: navLinks.length * 0.1 }}
+              className="w-full px-12 pt-6"
+            >
+              <Link to="/contact" onClick={() => setIsOpen(false)} className="w-full">
+                <button className="btn-gold w-full py-5 text-sm font-bold uppercase tracking-[0.3em] rounded-full shadow-gold">
+                  Hire Me
+                </button>
+              </Link>
+            </motion.div>
           </div>
 
           <div className="flex space-x-12 pt-12 border-t border-white/5 w-full justify-center">
