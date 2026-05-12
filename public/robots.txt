@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Speed up indexing for major engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Optimization for social crawlers
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+Host: https://sinanvk.com/
+Sitemap: https://sinanvk.com/sitemap.xml
