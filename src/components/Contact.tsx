@@ -245,22 +245,22 @@ const Contact = () => {
                   <p className="text-red-500 text-xs font-mono tracking-tight">TRANSMISSION_ERROR: PLEASE RETRY OR EMAIL DIRECTLY</p>
                 )}
 
-                <button 
-                  disabled={status === 'loading'}
-                  className="btn-gold w-full mt-8 flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-gold"
-                >
-                  {status === 'loading' ? (
-                    <>
-                      TRANSMITTING...
-                      <Loader2 size={18} className="animate-spin" />
-                    </>
-                  ) : (
-                    <>
-                      INITIALIZE CONSULTATION
-                      <Send size={18} />
-                    </>
-                  )}
-                </button>
+                  <button 
+                    disabled={status === 'loading'}
+                    className="btn-gold w-full mt-8 flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-gold rounded-full py-5 text-sm"
+                  >
+                    {status === 'loading' ? (
+                      <>
+                        TRANSMITTING...
+                        <Loader2 size={18} className="animate-spin" />
+                      </>
+                    ) : (
+                      <>
+                        HIRE ME: SEND MESSAGE
+                        <Send size={18} />
+                      </>
+                    )}
+                  </button>
               </form>
             )}
           </motion.div>

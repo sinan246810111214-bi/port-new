@@ -50,11 +50,15 @@ const Navbar = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-gold transition-all duration-300 group-hover:w-full" />
             </Link>
           ))}
-          <Link to="/contact">
+          <Link to="/contact" onClick={() => {
+            if (window.location.pathname === '/contact') {
+              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}>
             <motion.button 
               whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(212, 175, 55, 0.3)" }}
               whileTap={{ scale: 0.95 }}
-              className="btn-gold !py-3 !px-8 !text-[9px] !rounded-full"
+              className="btn-gold !py-3 !px-10 !text-[12px] !rounded-full font-bold"
             >
               Hire Me
             </motion.button>
@@ -108,7 +112,12 @@ const Navbar = () => {
               transition={{ delay: navLinks.length * 0.1 }}
               className="w-full px-12 pt-6"
             >
-              <Link to="/contact" onClick={() => setIsOpen(false)} className="w-full">
+              <Link to="/contact" onClick={() => {
+                setIsOpen(false);
+                if (window.location.pathname === '/contact') {
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                }
+              }} className="w-full">
                 <button className="btn-gold w-full py-5 text-sm font-bold uppercase tracking-[0.3em] rounded-full shadow-gold">
                   Hire Me
                 </button>
