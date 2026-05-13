@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-12 mb-20">
           <div className="col-span-2">
-            <h4 className="text-4xl font-serif font-bold tracking-tighter mb-6 group select-none">
+            <h4 className="text-3xl md:text-4xl font-serif font-bold tracking-tighter mb-6 group select-none">
               MS<span className="text-gold">VK</span><span className="text-gold">.</span>
             </h4>
             <p className="text-white/30 max-w-sm font-light leading-relaxed mb-10 text-[13px]">

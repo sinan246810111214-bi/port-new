@@ -51,7 +51,7 @@ const About = () => {
                 <span className="text-[10px] uppercase tracking-[0.5em] text-gold font-bold">The Strategic Vision</span>
             </div>
 
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold mb-10 leading-[1.1]">
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-serif font-bold mb-10 leading-[1.1]">
               Sinan VK <span className="text-gold italic">Digital Marketer</span>.
             </h2>
             

@@ -28,7 +28,7 @@ const Certificates = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-16">
           <h2 className="text-[10px] uppercase tracking-[0.5em] text-gold mb-4 font-bold">Verified Expertise</h2>
-          <h3 className="text-4xl font-serif font-bold">Official <span className="text-gold">Certifications</span>.</h3>
+          <h2 className="text-3xl md:text-4xl font-serif font-bold">Official <span className="text-gold">Certifications</span>.</h2>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8">
@@ -39,7 +39,7 @@ const Certificates = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="glass-card premium-border p-10 flex flex-col items-center text-center group"
+              className="glass-card premium-border p-6 sm:p-10 flex flex-col items-center text-center group"
             >
               <div className="mb-6 p-4 bg-gold/5 rounded-full group-hover:bg-gold/10 transition-colors">
                 {cert.icon}

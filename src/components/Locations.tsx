@@ -13,7 +13,7 @@ const Locations = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-12">
           <span className="text-[10px] uppercase tracking-[0.5em] text-gold mb-4 font-bold block">Serving Locations</span>
-          <h2 className="text-3xl font-serif font-bold">Dominating <span className="text-gold">Kerala's</span> Digital Landscape.</h2>
+          <h2 className="text-2xl md:text-3xl font-serif font-bold">Dominating <span className="text-gold">Kerala's</span> Digital Landscape.</h2>
         </div>
         
         <div className="grid md:grid-cols-4 gap-8">

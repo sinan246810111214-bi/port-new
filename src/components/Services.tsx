@@ -39,7 +39,7 @@ const Services = () => {
                 className="w-20 h-px bg-gold mb-12"
             />
             <span className="text-sm uppercase tracking-[0.4em] text-gold mb-4 text-center">Exclusive Specializations</span>
-            <h2 className="text-5xl md:text-6xl font-serif font-bold text-center leading-tight">
+            <h2 className="text-4xl md:text-6xl font-serif font-bold text-center leading-tight">
               Crafted Solutions for <br/> <span className="italic text-white/90 underline decoration-gold/30 underline-offset-8">Global Expansion</span>.
             </h2>
         </div>

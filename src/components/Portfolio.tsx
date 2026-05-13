@@ -54,7 +54,7 @@ const Portfolio = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-24">
             <span className="text-sm uppercase tracking-[0.4em] text-gold mb-6 block">Global Success Stories</span>
-            <h2 className="text-5xl md:text-7xl font-serif font-bold mb-8">Selected <span className="text-gold">Works</span></h2>
+            <h2 className="text-4xl md:text-7xl font-serif font-bold mb-8">Selected <span className="text-gold">Works</span></h2>
             <p className="max-w-xl mx-auto text-white/40 font-light text-sm italic">
                 A showcase of international collaborations delivering results in Dubai, Norway, and India.
             </p>
@@ -70,6 +70,15 @@ const Portfolio = () => {
               viewport={{ once: true }}
               className={`group relative overflow-hidden bg-black-deep aspect-[4/5] border border-white/5 ${index === 1 ? 'lg:translate-y-12' : index === 4 ? 'lg:-translate-y-12' : ''}`}
             >
+              {project.link && (
+                <a 
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute inset-0 z-20 cursor-pointer"
+                  aria-label={`View ${project.title}`}
+                />
+              )}
               <img 
                 src={project.image} 
                 alt={`${project.title} - ${project.category} - Freelance Marketer Kerala Portfolio`} 
@@ -87,18 +96,12 @@ const Portfolio = () => {
                     <h3 className="text-3xl font-serif font-bold text-white/90 leading-tight">{project.title}</h3>
                   </div>
 
-                  <div className="flex justify-between items-end pt-8 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
+                  <div className="flex justify-between items-end pt-8 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0 relative z-30">
                       <p className="text-white/40 text-[10px] leading-relaxed font-light max-w-[180px]">{project.description}</p>
                       {project.link && (
-                        <motion.a 
-                          href={project.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          whileHover={{ scale: 1.1, rotate: 5 }}
-                          className="h-12 w-12 glass-card rounded-full flex items-center justify-center text-gold hover:text-white transition-colors border border-gold/20"
-                        >
+                        <div className="h-12 w-12 glass-card rounded-full flex items-center justify-center text-gold group-hover:text-white transition-colors border border-gold/20">
                             <ExternalLink size={18} />
-                        </motion.a>
+                        </div>
                       )}
                   </div>
               </div>

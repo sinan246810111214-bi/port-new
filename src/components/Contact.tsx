@@ -135,7 +135,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="glass-card p-10 md:p-16 border-gold/10"
+            className="glass-card p-6 sm:p-10 md:p-16 border-gold/10"
           >
             {status === 'success' ? (
               <motion.div 

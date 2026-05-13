@@ -35,7 +35,7 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="mb-20">
           <h2 className="text-[10px] uppercase tracking-[0.5em] text-gold mb-4 font-bold">Client Testimonials</h2>
-          <h3 className="text-5xl font-serif font-bold">Global <span className="text-gold">Proof</span>.</h3>
+          <h3 className="text-4xl md:text-5xl font-serif font-bold">Global <span className="text-gold">Proof</span>.</h3>
         </div>
 
         <div className="grid md:grid-cols-3 gap-12">
@@ -45,7 +45,7 @@ const Testimonials = () => {
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="glass-card premium-border p-12 flex flex-col relative"
+              className="glass-card premium-border p-6 sm:p-12 flex flex-col relative"
             >
               <div className="flex gap-1 mb-6 text-gold">
                 {[...Array(5)].map((_, i) => <Star key={i} size={14} fill="currentColor" />)}

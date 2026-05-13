@@ -132,7 +132,7 @@ const Blog = () => {
             <div className="w-12 h-px bg-gold" />
             <span className="text-gold uppercase tracking-[0.4em] text-[10px] font-bold">Insights & Perspectives</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-serif font-bold">The <span className="text-gold">Journal</span>.</h2>
+          <h2 className="text-4xl md:text-6xl font-serif font-bold">The <span className="text-gold">Journal</span>.</h2>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -144,7 +144,7 @@ const Blog = () => {
               transition={{ delay: index * 0.1 }}
               viewport={{ once: true }}
               onClick={() => setSelectedPost(post)}
-              className="group cursor-pointer glass-card premium-border p-4 bg-transparent hover:bg-white/[0.02] transition-all"
+              className="group cursor-pointer glass-card premium-border p-3 sm:p-4 bg-transparent hover:bg-white/[0.02] transition-all"
             >
               <div className="relative overflow-hidden aspect-[16/10] mb-8 border border-gold/10">
                 <img 
